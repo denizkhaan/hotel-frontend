@@ -64,7 +64,8 @@ export default function VisitRoom() {
 
       {room.imageUrl && (
         <img
-          src={`https://localhost:7168${room.imageUrl}`}
+          src={`https://hotel-backend-1-txtd.onrender.com${room.imageUrl}`}
+
           alt="Room"
           className="img-fluid rounded shadow mb-4"
           style={{ maxHeight: "400px" }}
