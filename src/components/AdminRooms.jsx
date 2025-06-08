@@ -28,7 +28,7 @@ export default function AdminRooms() {
     formData.append("description", room.description);
     formData.append("imageFile", selectedFile); // this is a File object
 
-    await axios.post("https://localhost:7168/api/Hotel/add-room-with-image", formData, {
+    await axios.post("https://hotel-backend-1-txtd.onrender.com/Hotel/add-room-with-image", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         Authorization: `Bearer ${token}`,

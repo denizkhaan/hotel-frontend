@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API = "https://localhost:7168/api";
+const API = "https://hotel-backend-1-txtd.onrender.com";
 
 export default function VisitRoom() {
   const { state } = useLocation();

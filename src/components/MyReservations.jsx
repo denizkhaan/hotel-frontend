@@ -15,7 +15,7 @@ export default function MyReservations() {
       return;
     }
 
-    const API_BASE_URL = "https://localhost:7168";
+    const API_BASE_URL = "https://hotel-backend-1-txtd.onrender.com";
 
     axios
       .get(`${API_BASE_URL}/api/Reservation/user/${userId}`, {

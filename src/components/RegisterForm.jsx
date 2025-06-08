@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API = "https://localhost:7168/api";
+const API = "https://hotel-backend-1-txtd.onrender.com";
 
 export default function RegisterForm() {
   const [user, setUser] = useState({

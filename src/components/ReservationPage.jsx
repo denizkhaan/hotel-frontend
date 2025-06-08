@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import ReservationForm from "../components/ReservationForm";
 import axios from "axios";
 
-const API = "https://localhost:7168/api";
+const API = "https://hotel-backend-1-txtd.onrender.com";
 
 export default function ReservationPage() {
   const navigate = useNavigate();
