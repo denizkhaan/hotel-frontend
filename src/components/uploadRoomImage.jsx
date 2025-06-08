@@ -7,7 +7,7 @@ const uploadRoomImage = async (roomId, selectedFile, roomName, description, toke
   formData.append("description", description);
 
   const response = await axios.post(
-    `https://hotel-backend-1-txtd.onrender.com/hotel/upload-room-image/${roomId}`,
+    `https://hotel-backend-1-txtd.onrender.com/api/hotel/upload-room-image/${roomId}`,
     formData,
     {
       headers: {

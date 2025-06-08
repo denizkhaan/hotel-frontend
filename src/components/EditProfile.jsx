@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
-const API = "https://hotel-backend-1-txtd.onrender.com";
+
+const API = "https://hotel-backend-1-txtd.onrender.com/api";
 
 export default function EditProfile() {
   const [user, setUser] = useState({

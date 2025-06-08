@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API = "https://hotel-backend-1-txtd.onrender.com";
+const API = "https://hotel-backend-1-txtd.onrender.com/api";
 
 export default function VisitRoom() {
   const { state } = useLocation();
@@ -90,7 +90,7 @@ export default function VisitRoom() {
       </ul>
 
       <button className="btn btn-success" onClick={handleReservation}>
-        ➕ Make Reservation
+        Make Reservation
       </button>
     </div>
   );

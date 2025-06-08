@@ -15,18 +15,18 @@ export default function AdminReservations() {
   }, []);
 
   const fetchReservations = async () => {
-    const res = await axios.get("https://hotel-backend-1-txtd.onrender.com/admin/all", { headers });
+    const res = await axios.get("https://hotel-backend-1-txtd.onrender.com/api/admin/all", { headers });
     setReservations(res.data);
   };
 
   const deleteReservation = async (id) => {
-    await axios.delete(`https://hotel-backend-1-txtd.onrender.com/admin/delete-reservation/${id}`, { headers });
+    await axios.delete(`https://hotel-backend-1-txtd.onrender.com/api/admin/delete-reservation/${id}`, { headers });
    
     fetchReservations();
   };
 
   const updateReservation = async () => {
-    await axios.put(`https://hotel-backend-1-txtd.onrender.com/admin/edit-reservation/${selectedReservation.id}`, selectedReservation, { headers });
+    await axios.put(`https://hotel-backend-1-txtd.onrender.com/api/admin/edit-reservation/${selectedReservation.id}`, selectedReservation, { headers });
    
     fetchReservations();
     setSelectedReservation(null);

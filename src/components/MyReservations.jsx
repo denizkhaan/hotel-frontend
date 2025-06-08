@@ -15,7 +15,7 @@ export default function MyReservations() {
       return;
     }
 
-    const API_BASE_URL = "https://hotel-backend-1-txtd.onrender.com";
+    const API_BASE_URL = "https://hotel-backend-1-txtd.onrender.com/api";
 
     axios
       .get(`${API_BASE_URL}/api/Reservation/user/${userId}`, {
@@ -27,7 +27,7 @@ export default function MyReservations() {
         const enriched = await Promise.all(
           reservations.map(async (r) => {
             try {
-              const infoRes = await axios.get(`${API_BASE_URL}/api/Hotel/room-info`, {
+              const infoRes = await axios.get(`${API_BASE_URL}/Hotel/room-info`, {
                 params: { roomId: r.roomId, hotelId: r.hotelId },
                 headers: { Authorization: `Bearer ${token}` }
               });

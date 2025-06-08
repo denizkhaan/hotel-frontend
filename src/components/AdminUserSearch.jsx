@@ -11,7 +11,7 @@ const AdminUserSearch = () => {
         const token = localStorage.getItem("token");
 
         axios
-          .get(`https://hotel-backend-1-txtd.onrender.com/Admin/search-users?username=${search}`, {
+          .get(`https://hotel-backend-1-txtd.onrender.com/api/Admin/search-users?username=${search}`, {
             headers: {
               Authorization: `Bearer ${token}`
             }

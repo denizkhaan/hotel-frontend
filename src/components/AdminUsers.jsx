@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import AdminUserSearch from "./AdminUserSearch";
 
-const API = "https://hotel-backend-1-txtd.onrender.com";
+const API = "https://hotel-backend-1-txtd.onrender.com/api";
 
 export default function AdminUsers() {
   const [users, setUsers] = useState([]);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const API = "https://hotel-backend-1-txtd.onrender.com/Hotel";
+const API = "https://hotel-backend-1-txtd.onrender.com/api/Hotel";
 
 export default function AdminHotels() {
   const [hotel, setHotel] = useState({
