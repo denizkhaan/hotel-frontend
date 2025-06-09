@@ -77,7 +77,7 @@ export default function ReservationPage() {
         <div className="mb-4">
           {roomDetails.imageUrl && (
             <img
-              src={`https://localhost:7168${roomDetails.imageUrl}`}
+              src={`https://hotel-backend-1-txtd.onrender.com/api${roomDetails.imageUrl}`}
               alt="Room"
               className="img-fluid rounded mb-3"
               style={{ maxHeight: "300px" }}
