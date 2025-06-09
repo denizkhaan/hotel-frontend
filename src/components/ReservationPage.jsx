@@ -53,7 +53,7 @@ export default function ReservationPage() {
         endDate: reservation.endDate
       };
 
-      await axios.post(`${API}/Reservation/make`, payload, {
+      await axios.post(`${API}/reservation/make`, payload, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json"

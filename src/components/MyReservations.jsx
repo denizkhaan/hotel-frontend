@@ -18,7 +18,7 @@ export default function MyReservations() {
     const API_BASE_URL = "https://hotel-backend-1-txtd.onrender.com/api";
 
     axios
-      .get(`${API_BASE_URL}/Reservation/user/${userId}`, {
+      .get(`${API_BASE_URL}/reservation/user/${userId}`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(async (res) => {
