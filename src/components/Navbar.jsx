@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary px-4">
       <Link className="navbar-brand fw-bold text-white text-decoration-none" to="/">
-        🏨 HotelPortal
+        🏨 Booksy.com
       </Link>
 
       <div className="collapse navbar-collapse">
