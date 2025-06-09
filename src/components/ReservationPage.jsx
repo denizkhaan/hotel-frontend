@@ -57,11 +57,14 @@ await axios.post(`${API}/Reservation/make`, payload, {
   headers: {
     Authorization: `Bearer ${token}`,
     "Content-Type": "application/json"
+    
   }
+  
 });
 
 
-     
+     console.log("Sending payload:", payload);
+
       navigate("/reservations");
     } catch (error) {
       console.error("Reservation failed:", error);
