@@ -46,19 +46,20 @@ export default function ReservationPage() {
       const token = localStorage.getItem("token");
 
       const payload = {
-        userId: reservation.userId,
-        hotelId: reservation.hotelId,
-        roomId: reservation.roomId,
-        startDate: reservation.startDate,
-        endDate: reservation.endDate
-      };
+  userId: reservation.userId,
+  hotelId: reservation.hotelId,
+  roomId: reservation.roomId,
+  startDate: reservation.startDate,
+  endDate: reservation.endDate
+};
 
-      await axios.post(`${API}/reservation/make`, payload, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json"
-        }
-      });
+await axios.post(`${API}/Reservation/make`, payload, {
+  headers: {
+    Authorization: `Bearer ${token}`,
+    "Content-Type": "application/json"
+  }
+});
+
 
      
       navigate("/reservations");
