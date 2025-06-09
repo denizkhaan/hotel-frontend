@@ -64,7 +64,7 @@ export default function VisitRoom() {
 
       {room.imageUrl && (
         <img
-          src={`https://hotel-backend-1-txtd.onrender.com${roomDetails.imageUrl}`}
+          src={`https://picsum.photos/200`}
 
           alt="Room"
           className="img-fluid rounded shadow mb-4"
