@@ -53,7 +53,7 @@ export default function ReservationPage() {
         endDate: reservation.endDate
       };
 
-      await axios.post(`${API}/reservation/make`, payload, {
+      await axios.post(`${API}/Reservation/make`, payload, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json"
@@ -77,7 +77,7 @@ export default function ReservationPage() {
         <div className="mb-4">
           {roomDetails.imageUrl && (
             <img
-              src={`https://hotel-backend-1-txtd.onrender.com/api${roomDetails.imageUrl}`}
+              src={`https://picsum.photos/200/300`}
               alt="Room"
               className="img-fluid rounded mb-3"
               style={{ maxHeight: "300px" }}
